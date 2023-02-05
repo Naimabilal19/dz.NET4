@@ -55,20 +55,20 @@ namespace ConsoleApp4
             string polindrom = Console.ReadLine();
             for (int i = 0; i < polindrom.Length; i++)
             {
-                if (polindrom[i] != polindrom[polindrom.Length - 1 - i])
+                if (polindrom[i] != polindrom[polindrom.Length - 1 - i])  //если элементы в массиве не равны элементам массива с конца
                 {
-                    Console.WriteLine("Not polindrom");
+                    Console.WriteLine("Not polindrom");     //то это не полиндром
                 }
                 else
-                    Console.WriteLine("Polindrom");
+                    Console.WriteLine("Polindrom");  //иначе полиндром 
                 break;
             }
 
             Console.WriteLine("-----------------------------------");
             //задание 12
-            string words = "Hello world, Hello World!";
+            string words = "Hello world, Hello World!"; 
             Console.WriteLine(words);
-            Console.WriteLine("Количество слов:" + words.Split().Count());
+            Console.WriteLine("Количество слов:" + words.Split().Count());  //делим на массивы и берем количество слов
 
 
             Console.WriteLine("-----------------------------------");
@@ -83,7 +83,7 @@ namespace ConsoleApp4
             Console.WriteLine("Исходное предложение: ");
             Console.WriteLine(str11);
 
-            str11 = str11.Replace(str2, str3);
+            str11 = str11.Replace(str2, str3);   //заменяем искомое слово на введённое 
             Console.WriteLine("Новое предложение: ");
             Console.WriteLine(str11);
 
@@ -92,9 +92,9 @@ namespace ConsoleApp4
 
             //задание 14
             Console.WriteLine("Введите предложение: ");
-            string[] strrr = Console.ReadLine().Split(' ');
-            Array.Reverse(strrr);
-            Console.WriteLine(String.Join(" ", strrr));
+            string[] strrr = Console.ReadLine().Split(' ');   //снова делим на массивы
+            Array.Reverse(strrr);   //меняем местами 
+            Console.WriteLine(String.Join(" ", strrr));  //и собираем обратно
 
 
             Console.WriteLine("-----------------------------------");
